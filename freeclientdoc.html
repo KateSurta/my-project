@@ -1,42 +1,40 @@
-# my-project
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>   
 	  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">      
-	  <title>РЎР”Р‘Рћ BS-Client </title>	  
+	  <title>CДБО BS-Client </title>	  
   </head> 
   <body>    
 		<form method="get">	
 		<ul style="list-style-type: none;">
-		<p>ГЏГ°Г®ГЁГ§ГўГ®Г«ГјГ­Г»Г© Г¤Г®ГЄГіГ¬ГҐГ­ГІ Гў ГЎГ Г­ГЄ</p>
+		<p>Произвольный документ в банк</p>
 			<table>				
 				<tr>
-					<td>ГЌГ®Г¬ГҐГ° Г¤Г®ГЄГіГ¬ГҐГ­ГІГ :<input type="number" name="num_document" size="16" maxlength="16"></td>	
-					<td>Г„Г ГІГ  Г¤Г®ГЄГіГ¬ГҐГ­ГІГ :<input type="date" name="date_document"></td>		
-					<td>Г’ГЁГЇ:
+					<td>Номер документа:<input type="number" name="num_document" size="16" maxlength="16"></td>	
+					<td>Дата документа:<input type="date" name="date_document"></td>		
+					<td>Тип:
 						<select name="type">
 						    <option value="empty"></option>
-							<option value="mail">ГЏГЁГ±ГјГ¬Г®</option>
-							<option value="file">Г”Г Г©Г«</option>
+							<option value="mail">Письмо</option>
+							<option value="file">Файл</option>
 						</select>
 					</td>					
 				</tr>
 			</table>
 			<table>
 				<tr>
-					<td>ГЌГ ГЁГ¬ГҐГ­Г®ГўГ Г­ГЁГ­Г®ГўГ Г­ГЁГҐ Г®ГІГЇГ°Г ГўГЁГІГҐГ«Гї:<input type="text" name="client" size="70" maxlength="105"></td>
+					<td>Наименованинование отправителя:<input type="text" name="client" size="70" maxlength="105"></td>
 				</tr>
 			</table>
 			<table>
 				<tr>
-					<td>Г’ГЁГЇ Г®ГЎГ°Г Г№ГҐГ­ГЁГї:
+					<td>Тип обращения:
 						<select name="type_document">
 							<option value="empty"></option>
-							<option value="paydocby">ГЏГ«Г ГІГҐГ¦Г­Г®ГҐ ГЇГ®Г°ГіГ·ГҐГ­ГЁГҐ Гў ГЎГҐГ«.Г°ГіГЎГ«ГїГµ</option>
-							<option value="paydoccur">ГЏГ«Г ГІГҐГ¦Г­Г®ГҐ ГЇГ®Г°ГіГ·ГҐГ­ГЁГҐ Гў ГЁГ­Г®Г±ГІГ°Г Г­Г­Г®Г© ГўГ Г«ГѕГІГҐ</option>
-							<option value="all">Г‚Г±ГҐ Г¤Г®ГЄГіГ¬ГҐГ­ГІГ»</option>
-							<option value="questions">Г‚Г®ГЇГ°Г®Г± Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ Г¬ ГЎГ Г­ГЄГ </option>
+							<option value="paydocby">Платежное поручение в бел.рублях</option>
+							<option value="paydoccur">Платежное поручение в иностранной валюте</option>
+							<option value="all">Все документы</option>
+							<option value="questions">Вопрос сотрудникам банка</option>
 						</select>
 					</td>	
 				</tr>
@@ -53,7 +51,7 @@
 					<td><input type="file" name="file"></input></td>
 				</tr>	
 			</table>
-			<input name="submit" type="submit" value="Г‘Г®ГµГ°Г Г­ГЁГІГј">
+			<input name="submit" type="submit" value="Сохранить">
         </form>		
 	</body>
 </html>
