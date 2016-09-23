@@ -1,0 +1,59 @@
+# my-project
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>   
+	  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">      
+	  <title>СДБО BS-Client </title>	  
+  </head> 
+  <body>    
+		<form method="get">	
+		<ul style="list-style-type: none;">
+		<p>Ïðîèçâîëüíûé äîêóìåíò â áàíê</p>
+			<table>				
+				<tr>
+					<td>Íîìåð äîêóìåíòà:<input type="number" name="num_document" size="16" maxlength="16"></td>	
+					<td>Äàòà äîêóìåíòà:<input type="date" name="date_document"></td>		
+					<td>Òèï:
+						<select name="type">
+						    <option value="empty"></option>
+							<option value="mail">Ïèñüìî</option>
+							<option value="file">Ôàéë</option>
+						</select>
+					</td>					
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>Íàèìåíîâàíèíîâàíèå îòïðàâèòåëÿ:<input type="text" name="client" size="70" maxlength="105"></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>Òèï îáðàùåíèÿ:
+						<select name="type_document">
+							<option value="empty"></option>
+							<option value="paydocby">Ïëàòåæíîå ïîðó÷åíèå â áåë.ðóáëÿõ</option>
+							<option value="paydoccur">Ïëàòåæíîå ïîðó÷åíèå â èíîñòðàííîé âàëþòå</option>
+							<option value="all">Âñå äîêóìåíòû</option>
+							<option value="questions">Âîïðîñ ñîòðóäíèêàì áàíêà</option>
+						</select>
+					</td>	
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>
+					<textarea rows="10" cols="50" name="comments" maxlength="500"></textarea>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td><input type="file" name="file"></input></td>
+				</tr>	
+			</table>
+			<input name="submit" type="submit" value="Ñîõðàíèòü">
+        </form>		
+	</body>
+</html>
