@@ -30,8 +30,7 @@ public class SQLiteBasketDao implements IBasketDao {
 		Statement stmt = null;
 		try {
 			con = DriverManager.getConnection(URL, USER, PASSWORD);
-			stmt = con.createStatement();
-			// заменить на инсерт таблицы общей для продуктов и корзин
+			stmt = con.createStatement();			
 			String sql = " insert into Item_in_basket(Product_id, Basket_id,Quantity) values (" + productId + " ,"
 					+ basketId + "," + quantity + ")";
 			stmt.executeUpdate(sql);

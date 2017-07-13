@@ -73,7 +73,7 @@ public class Product {
 			return false;
 		return true;
 	}
-	// to write full info about the product in console
+	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();

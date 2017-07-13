@@ -11,13 +11,7 @@ public final class DatabaseUtil {
 
 	}
 
-	/**
-	 * Close Statement and Connection
-	 * 
-	 * @param resultSet
-	 * @param statement
-	 * 
-	 */
+	
 	public static void close(Statement statement, Connection connection) {
 
 		if (null != statement) {
@@ -37,14 +31,7 @@ public final class DatabaseUtil {
 		}
 	}
 
-	/**
-	 * Close ResultSet, Statement and Connection
-	 * 
-	 * @param resultSet
-	 * @param statement
-	 * @param connection
-	 * 
-	 */
+	
 	public static void close(ResultSet resultSet, Statement statement, Connection connection) {
 
 		if (null != resultSet) {

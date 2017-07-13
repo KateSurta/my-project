@@ -13,7 +13,7 @@ import dao.IProductDao;
 import factory.DaoFactoryCreator;
 import model.Basket;
 import model.Product;
-//create ShopFacade singleton
+
 public class ShopFacade implements IShopFacade {
 
     private static ShopFacade instance = null;

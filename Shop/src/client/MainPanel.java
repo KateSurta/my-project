@@ -46,10 +46,10 @@ public class MainPanel extends JFrame {
 	public JTable jTabItem;
 	Object[] headers = { "Name item", "Count", "Summa" };
 
-	// Массив содержащий информацию для таблицы
+	
 	Object[][] data = {};
 
-	// Initialize mainpage component
+	
 	public MainPanel() {
 		qrCode = new JTextField(10);
 		nameProduct = new JTextField(10);
@@ -64,8 +64,7 @@ public class MainPanel extends JFrame {
 		shopFacade = ShopFacade.getInstance();
 		frame = new JFrame("My Shop");
 		frame.setSize(1200, 800);
-		frame.setLayout(new GridLayout(1, 2));
-		// qrCode.addActionListener(new SendHandler());
+		frame.setLayout(new GridLayout(1, 2));		
 		JPanel panel1 = new JPanel();
 		panel1.setBackground(Color.PINK);
 		JPanel panel2 = new JPanel();
